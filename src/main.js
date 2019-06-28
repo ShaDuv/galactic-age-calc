@@ -11,7 +11,7 @@ $(document).ready(function() {
     console.log('Age is ' + userAge);
     console.log('Life is ' + userLife);
     console.log(planet);
-    console.log(planet + ' age is ' + user.calcAge(planet).toFixed(2));
-    console.log(planet + ' life is ' + user.calcLife(planet).toFixed(2));
+    console.log(planet + ' age is ' + user.calcAge(planet).toFixed(1));
+    console.log(planet + ' life is ' + user.calcLife(planet).toFixed(1));
   });
 });
