@@ -2,24 +2,16 @@ import $ from 'jquery';
 import { User } from './calculator.js';
 
 $(document).ready(function() {
-  $('#mercury').click(function(event) {
-
-    console.log('jquery is working');
+  $('#trigger').click(function(event) {
     event.preventDefault();
-
     const userAge = parseFloat($('#user-age').val());
-    console.log(userAge);
-
-    let mercAge = new User(userAge);
-    console.log(mercAge.mercAge());
-
-    let venAge = new User(userAge);
-    console.log(venAge.venAge());
-
-    let marAge = new User(userAge);
-    console.log(marAge.marAge().toFixed(1));
-
-    let jupAge = new User(userAge);
-    console.log(jupAge.jupAge().toFixed(1));
+    const userLife = parseFloat($('#life').val());
+    let planet = $('input[name = planet]:checked').val();
+    let user = new User(userAge, userLife);
+    console.log('Age is ' + userAge);
+    console.log('Life is ' + userLife);
+    console.log(planet);
+    console.log(planet + ' age is ' + user.calcAge(planet).toFixed(2));
+    console.log(planet + ' life is ' + user.calcLife(planet).toFixed(2));
   });
 });

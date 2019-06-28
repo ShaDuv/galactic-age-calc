@@ -1,17 +1,19 @@
 export class User {
-  constructor(age) {
+  constructor(age, life) {
     this.age = age;
+    this.life = life;
+    this.planets = {
+      mer: 0.24,
+      ven: 0.62,
+      ear: 1,
+      mar: 1.88,
+      jup: 11.86
+    };
   }
-  mercAge() {
-    return this.age * 0.24;
+  calcLife(planet) {
+    return this.life * this.planets[planet];
   }
-  venAge() {
-    return this.age * 0.62;
-  };
-  marAge() {
-    return this.age * 1.88;
-  };
-  jupAge() {
-    return this.age * 11.86;
-  };
+  calcAge(planet) {
+    return this.age * this.planets[planet];
+  }
 };
