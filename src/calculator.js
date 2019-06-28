@@ -8,4 +8,10 @@ export class User {
   venAge() {
     return this.age * 0.62;
   };
+  marAge() {
+    return this.age * 1.88;
+  };
+  jupAge() {
+    return this.age * 11.86;
+  };
 };

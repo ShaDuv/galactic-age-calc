@@ -15,5 +15,11 @@ $(document).ready(function() {
 
     let venAge = new User(userAge);
     console.log(venAge.venAge());
+
+    let marAge = new User(userAge);
+    console.log(marAge.marAge().toFixed(1));
+
+    let jupAge = new User(userAge);
+    console.log(jupAge.jupAge().toFixed(1));
   });
 });
