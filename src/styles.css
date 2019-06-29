@@ -1,0 +1,8 @@
+img {
+  width: 50px;
+}
+
+.planet {
+  display: inline-block;
+  align-items: center;
+}

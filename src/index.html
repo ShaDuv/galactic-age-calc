@@ -4,19 +4,39 @@
     <meta charset="utf-8">
     <title></title>
   </head>
-  <body>
-    <form class="" action="index.html" method="post">
-      <label for="">Enter your age</label>
-      <input id="user-age" type="number" name="" value="20">
-      <input id="life" type="number" name="" value="86">
+  <body class="container">
+        <form class="" action="index.html" method="post">
+          <label for="">Enter your DOB</label>
+          <input id="user-age" type="text" name="" value="01/01/1999">
+          <input id="life" type="number" name="" value="86">
 
-      <div class="form-group" id="trigger">
-        <input type="radio" name="planet" value="mer"> MERCURY
-        <input type="radio" name="planet" value="ven"> VENUS
-        <input type="radio" name="planet" value="ear"> EARTH
-        <input type="radio" name="planet" value="mar"> MARS
-        <input type="radio" name="planet" value="jup"> JUPITER
-      </div>
+      <div class="form-check row" id="trigger">
+        <div class="col-md-12 planet form-check">
+          <input type="radio" name="planet" value="ear"> EARTH
+          <img src="./img/Mercury.png" alt=""><br>
+        </div>
+
+        <div class="col-md-3 planet form-check">
+          <label for="merc"><img src="./img/Mercury.png" alt=""></label><br>
+          <input class='form-check-input radio-inline' type="radio" name="planet" value="mer"> MERCURY
+        </div>
+
+        <div class="col-md-3 planet form-check">
+          <img src="./img/Venus.png" alt=""><br>
+          <input type="radio" name="planet" value="ven"> VENUS
+        </div>
+
+          <div class="col-md-3 planet form-check">
+            <img src="./img/Mars.png" alt=""><br>
+            <input type="radio" name="planet" value="mar"> MARS
+          </div>
+
+          <div class="col-md-3 planet form-check">
+            <img src="./img/Jupiter.png" alt=""><br>
+            <input type="radio" name="planet" value="jup"> JUPITER
+          </div>
+    </div>
+    </div>
 
 
     </form>
